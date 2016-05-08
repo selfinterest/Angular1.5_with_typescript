@@ -1,18 +1,5 @@
-import * as angular from "angular";
+import { bootstrap }    from '@angular/platform-browser-dynamic';
 
+import { AppComponent } from './app.component';
 
-module app {
-    
-    class AppComponent {
-        
-        public bindings:any;
-        public controller:any;
-        public templateUrl:string;
-        public template:string;
-        
-        constructor(){
-            this.template = `<div>Test</div>`;
-        }
-    }
-    angular.module("Hercules", []).component('appComponent', new AppComponent());
-}
+bootstrap(AppComponent);
