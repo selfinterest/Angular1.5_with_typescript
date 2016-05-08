@@ -1,10 +1,10 @@
 {
   "name": "hercules",
   "version": "1.0.0",
-  "description": "",
+  "description": "An app to help me learn Typescript and the lyrics to the Hercules song at the same time",
   "main": "",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js --content-base dist/",
+    "start": "webpack-dev-server --config webpack.config.js --inline --hot",
     "build": "webpack --config webpack.config.js"
   },
   "author": "",
@@ -14,6 +14,8 @@
     "typescript": "^1.8.10"
   },
   "devDependencies": {
-    "ts-loader": "^0.8.2"
+    "html-webpack-plugin": "^2.16.1",
+    "ts-loader": "^0.8.2",
+    "webpack": "^1.13.0"
   }
 }
